@@ -1,0 +1,26 @@
+import numpy as np 
+arr_int = np.array([1,2,4])
+print(arr_int.dtype)
+arr_string = np.array(['raja','durai','S'])
+print(arr_string.dtype)
+ar = np.array([1,2,3],dtype = 'S')
+print(ar.dtype)
+a = np.array([1,23,4],dtype='i4')
+print(a.dtype)
+
+#converting data types into existing arrays
+arr = np.array([1.2,4.5,6.7])
+new_arr = arr.astype('i')
+
+new_arrr = arr.astype(int)
+print(arr)
+print(new_arr)
+print(new_arrr.dtype)
+float1 = new_arr.astype('f')
+print(float1)
+print(float1.dtype)
+boolean = np.array([1,0,1,1])
+boo = boolean.astype(bool)
+print(boolean)
+print(boo)
+print(boo.dtype)
